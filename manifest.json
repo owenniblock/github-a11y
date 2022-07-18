@@ -8,12 +8,15 @@
       "matches": ["https://github.com/*", "https://gist.github.com/*"],
       "css": ["styles.css"],
       "js": ["contentScript.js"]
-
+    },
+    {
+      "matches": ["https://app.sproutsocial.com/*"],
+      "js": ["sproutSocialScript.js"]
     }
   ],
   "background": {
     "service_worker": "background.js"
   },
   "permissions": ["tabs", "webNavigation"],
-  "host_permissions": ["*://github.com/*", "https://gist.github.com/*"]
+  "host_permissions": ["*://github.com/*", "https://gist.github.com/*", "https://app.sproutsocial.com/*"]
 }
